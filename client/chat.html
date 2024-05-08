@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat crypté avec système de chat en réseau - Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Projet_A3_nanterre</h1>
+  <div id="chat-container">
+    <div id="chat-box">
+      <div id="chat-messages"></div>
+    </div>
+    <form id="chat-form">
+      <input type="text" width="80%" id="message-input" placeholder="Veuillez saisir votre message...">
+      <button type="submit" id="send-button1">Envoyer</button>
+    </form>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/socket.io/nodersa.js"></script>
+  <script src="client.js"></script>
+  <style>
+    #message-input {
+      width: 80%;
+    }
+  </style>
+</body>
+</html>

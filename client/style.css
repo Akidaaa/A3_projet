@@ -1,0 +1,199 @@
+/* Style pour la page index.html */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#message-input {
+  width: 80%;
+}
+
+
+.input-field {
+  width: 800px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #3E8E41;
+}
+
+/* Positionnement CSS de la section index.html */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style CSS du titre du formulaire d'entrée vers chat.html */
+  h1 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  /* Style CSS du formulaire */
+  .form-container {
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .title-animation {
+    animation: title-animation 2s infinite alternate;
+    z-index: 1;
+    font-size: 3em;
+    color: white;
+    text-shadow: 0 0 10px black;
+  }
+
+  
+  @keyframes title-animation {
+    from {
+      color: #000;
+    }
+    to {
+      color: #fff;
+    }
+  }
+  
+  
+  /* Style CSS de la zone d'écriture de l'username */
+  /*.input-field {
+    width: 31.25%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }*/
+  .input-field {
+    width: 600px; /* Augmenter la largeur à 600px */
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #message-input {
+    width: 600px; /* Augmenter la largeur à 600px */
+  }
+  
+  
+  /* Style CSS du bouton de soumission de l'username */
+  .submit-button {
+    width: 31.25%; /* 250px sur 800px */
+    padding: 10px;
+    background-color: #2C1320;
+    color: #DABECA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 11px;
+  }
+  
+  .submit-button:hover {
+    background-color: #2C1320;
+  }
+  
+  /* Style CSS de la page chat.html */
+  
+  /* Style CSS du titre de la page chat.html */
+  h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: dimgray;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+  
+  /*Positionnement CSS de la boîte de discussion */
+  #chat-box {
+    width: 50%; /* Prendre la moitié de la largeur de la page */
+    height: 50vh; /* Hauteur de 50% de la hauteur de la fenêtre */
+    margin: 0 auto 10px; /* Ajouter une marge inférieure de 10px et supprimer les marges supérieure, gauche et droite */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    /*overflow-scrolling: touch;*/
+  }
+  
+  /*Style CSS du corps de texte présent dans la boîte de discussion */
+  #chat-messages {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    color: black;
+    font-weight: normal;
+  }
+  
+  #chat-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0 ; /* Supprimer la marge supérieure */
+    padding: 10px;
+  }
+  
+  #message-input,
+  #send-button1 {
+    width: 100%; /* 250px sur 1000px (250/1000 * 100) */
+    max-width: 50%; /* 400px sur 800px (400/800 * 100) */
+    padding: 10px;
+    border: 2px solid rgba(44, 19, 32, 0.5);
+    border-radius: 5px;
+    margin-top: 10px; /* Réduire la marge supérieure pour qu'elle corresponde au bouton */
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: black;
+  }
+  
+  #message-input {
+    margin-bottom: 10px; /* Ajouter une marge inférieure pour séparer la zone d'écriture du bouton */
+    color: black;
+  }
+  
+  #send-button1 {
+    background-color: #2C1320;
+    color: #DABECA;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+  }
